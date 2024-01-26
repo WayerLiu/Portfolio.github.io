@@ -1,64 +1,153 @@
-/* style.css */
 body {
     font-family: 'Montserrat', sans-serif;
-    color: #000;
-    background-color: #fff;
+    background-color: black;
+    color: light #f5f5dc;
+    margin: 0;
+    padding: 0;
 }
 
-nav {
-    background-color: #000;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-}
-
-nav a {
+a {
     color: #ffdd00;
-    margin: 0 15px;
     text-decoration: none;
-    font-size: 18px;
-}
-
-.header-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
 }
 
 h1 {
-    color: #000;
-    font-family: 'Bangers', cursive;
-    font-size: 36px;
-    margin-bottom: 20px;
+    font-family: 'Lemon Tuesday', cursive;
+    font-size: 3rem;
+    margin: 0;
 }
 
-.main-body {
+/* 导航栏样式 */
+nav {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    font-weight: bold;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 20px;
+}
+
+/* 轮播图样式 */
+#carousel {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    position: relative;
+    margin-top: 20px;
+    width: auto;
+    flex-basis: 70%;
 }
 
-.image-slider {
-    width: 50%; /* Adjust as necessary */
-    /* Add styling for the slider */
+.carousel-item img {
+    width: 100%;
+    max-width: 1000px; 
+    height: auto; 
+    object-fit: contain;
 }
 
-.intro-text {
-    width: 40%; /* Adjust as necessary */
-    font-family: 'Lemon Tuesday', cursive;
+.carousel-inner {
+    display: flex;
+    overflow: hidden;
+}
+
+.carousel-item {
+    display: none;
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+.carousel-item.active {
+    display: block;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ffdd00;
     font-size: 20px;
-    color: #000;
 }
 
-/* Responsive design adjustments */
-@media screen and (max-width: 768px) {
-    .main-body {
-        flex-direction: column;
-        text-align: center;
-    }
+.carousel-control-prev {
+    left: 10px;
+}
 
-    .intro-text, .image-slider {
-        width: 90%;
-    }
+.carousel-control-next {
+    right: 10px;
+}
+
+.project-description {
+    color: #f5f5dc;
+    width: 50%;
+    padding: 20px;
+    font-size: 20px;
+}
+
+footer {
+    background-color: rgba(101, 81, 0, 0.86);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #ffdd00;
+}
+
+@font-face {
+    font-family: 'Lemon Tuesday';
+    src: url('fonts/Lemon_Tuesday.otf'); /* 字体文件路径 */
+}
+
+nav, .carousel-control-prev, .carousel-control-next {
+    font-family: 'Lemon Tuesday';
+}
+
+nav, .carousel-control-prev, .carousel-control-next {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.project-content {
+    text-align: center;
+    margin: 20px;
+}
+
+#project-carousel .carousel-inner {
+    width: 70%;
+    margin: auto;
+}
+
+#project-carousel .carousel-item img {
+    width: 100%; 
+    height: auto; 
+    object-fit: contain; 
+}
+
+.project-description {
+    margin-top: 20px;
 }
