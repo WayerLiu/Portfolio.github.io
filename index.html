@@ -1,73 +1,104 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Weier Liu's Portfolio</title>
+    <meta http-equiv="Page-Enter" content="revealTrans(Duration=1.0,Transition=0)">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lemon+Tuesday|Montserrat|Bangers:400,700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.3.1/swiper-bundle.min.js"
+        integrity="sha512-2w85qGM9apXW9EgevsY4S4fnJIUz6U6mXlLbgDKphBuwh7jPQNad70Ll5W+pcIrJ6rIMGpjP0CxYGQwKsynIaQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.3.1/swiper-bundle.min.css"
+        integrity="sha512-UV9ujyMxyYubOSkCa8+OGzknJ1EilA19WPimPseyMcZaGIoO8l7iNphD0Mq/0R/lNkzBH70ai3tmurxAW0M2ww=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
+
 <body>
     <nav>
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#empathy">Empathy</a></li>
-            <li><a href="#decomposition">Decomposition</a></li>
-            <li><a href="#analogy">Analogy</a></li>
-            <li><a href="#style">Style</a></li>
-            <li><a href="#context">Context</a></li>
-            <li><a href="#collage">Collage</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="project1.html">Empathy</a></li>
+            <li><a href="project2.html">Composition</a></li>
+            <li><a href="project3.html">Analogy</a></li>
+            <li><a href="project4.html">Style</a></li>
+            <li><a href="project5.html">Context</a></li>
+            <li><a href="project6.html">Blend</a></li>
         </ul>
     </nav>
+    <h1 class="index-heading">Innovative Design Fusion</h1>
+    <h2 class="index-heading">Weier Liu's Portfolio</h2>
     <div class="content-wrapper">
-        <div id="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/main1.png" alt="Empathy">
+        <div class="carousel">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/main1.png" alt="Empathy">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/main2.png" alt="Composition">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/main3.png" alt="Analogy">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/main4.png" alt="Style">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/main5.png" alt="Context">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/main6.png" alt="Blend">
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="img/main2.png" alt="Composition">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/main3.png" alt="Analogy">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/main4.png" alt="Style">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/main5.png" alt="Context">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/main6.png" alt="Blend">
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+                <div class="autoplay-progress">
+                    <svg viewBox="0 0 48 48">
+                        <circle cx="24" cy="24" r="20"></circle>
+                    </svg>
+                    <span></span>
                 </div>
             </div>
-            <!-- Carousel Controls -->
-            <a class="carousel-control-prev" href="#carousel" role="button">
-                <span class="control-icon prev-icon" aria-hidden="true"></span>
-            </a>
-            <a class="carousel-control-next" href="#carousel" role="button">
-                <span class="control-icon next-icon" aria-hidden="true"></span>
-            </a>
         </div>
-
         <div class="project-description">
-
-            <h1>Innovative Design Fusion</h1>
-            <p>Embark on my Experience Design odyssey, where generative AI meets diverse design scenarios.
-            </p>
-
-            <p>Discover projects that transform the mundane into the extraordinary, from empathetic commutes to stylish medical solutions. 
-           </p>
-
-            <p>Join this vibrant journey, redefining design with every step.</p>
+            <div class="swiper my-swiper-text">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide index-text-sub">
+                        <a href="project1.html">Empowering Moms, Elevating Mornings: Redefining the Daily Commute</a>
+                    </div>
+                    <div class="swiper-slide index-text-sub">
+                        <a href="project2.html">Netting Change: From Ocean Waste to Everyday Elegance</a>
+                    </div>
+                    <div class="swiper-slide index-text-sub">
+                        <a href="project3.html">Revealing Potential, Redefining Precision: Architectural Innovation in X-ray Vision</a>
+                    </div>
+                    <div class="swiper-slide index-text-sub">
+                        <a href="project4.html">Comfort Meets Customization: Medical Helmets Tailored for Your World</a>                        
+                    </div>
+                    <div class="swiper-slide index-text-sub">
+                        <a href="project5.html">Embracing Paws and Peace: Building a Kinder Kolkata</a>
+                    </div>
+                    <div class="swiper-slide index-text-sub">
+                        <a href="project6.html">Nature Meets Nurture: Revitalizing Spaces, Enriching Student Life</a>
+                    </div>
+                </div>
+            </div>
+            <p>Embark on my Experience Design odyssey, where generative AI meets diverse design scenarios.</p>          
+            <p>Discover projects that transform the mundane into the extraordinary.</p>
+            <p>Join this vibrant journey, redefining design with every step. Click the title above to see more.</p>
         </div>
     </div>
     <footer>
         <p>Weier Liu<br>
-           CS-489 Experience Design<br>
-           Portfolio<br>
-           <a href="mailto:weier.liu@epfl.ch">weier.liu@epfl.ch</a>
+            CS-489 Experience Design<br>
+            Portfolio<br>
+            <a href="mailto:weier.liu@epfl.ch">weier.liu@epfl.ch</a>
         </p>
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>
